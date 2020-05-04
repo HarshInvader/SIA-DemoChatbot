@@ -46,12 +46,17 @@ a:focus {
   outline: none;
 }
 
+h6 a {
+  color: rgba(213, 213, 213, 0.653);
+  font-weight: 300;
+}
+
 
 
 .page-content {
   margin-top: 30vh;
   font-size: 50px;
-  font-weight: 100;
+  font-weight: 500;
   text-align: center;
 }
 
