@@ -560,15 +560,17 @@ salesAI .suggestion .sugg-title {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 375px) {
   SalesAI .bot_profile {
     align-self: center;
-    width: 101%;
+    width: 102%;
+    margin-left: 0;
+    margin-right: 0;
     top: 0px;
     margin-bottom: 0px;
     right: 0;
     left: 0;
-    margin-top: -20px;
+    margin-top: -10px;
     text-align: center;
     border-radius: 0px 0px 0px 0px;
     display: none;
@@ -581,6 +583,14 @@ salesAI .suggestion .sugg-title {
     height: 70vh;
     right: 0;
   }
+
+
+
+  salesAI .resultDiv .botResult {
+    margin-top: 40px;
+  }
+
+
 }
 
 /* salesAI end */
