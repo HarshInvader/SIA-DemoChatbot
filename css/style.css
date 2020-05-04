@@ -524,6 +524,7 @@ salesAI .suggestion .sugg-title {
 
   salesAI .chatCont {
     height: 80vh !important;
+    border: 0px;
   }
 
   .page-content {
