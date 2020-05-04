@@ -165,38 +165,44 @@ salesAI .bot_profile_img {
 salesAI .chatForm {
   position: absolute;
   bottom: -50px;
+  z-index: 10;
   right: 0;
   margin-bottom: 0;
   width: 560px;
   display: none;
 }
 
+salesAI .fa-paper-plane {
+  text-align: center;
+  font-size: 25px;
+  color: #2b259f !important;
+  color: pointer;
 
-.background-for-send-button {
+}
+
+salesAI .background-for-send-button {
   position: absolute;
   border-top: 1px solid #dcdcdc;
   padding: 12px 5px 0px 5px;
   height: 50px;
   width: 60px;
+  cursor: pointer;
+  z-index: 99999999;
   right: 0px;
-  z-index: 99999;
+  z-index: -1;
+  color: #210CC1;
   text-align: center;
   background-color: rgb(236, 233, 252);
   bottom: 0px;
-  font-size: 100px;
+  font-size: 15px;
 }
 
-.background-for-send-button:hover {
+salesAI .background-for-send-button:hover {
   background-color: #cecdfc;
   cursor: pointer;
 }
 
-.fa-paper-plane {
-  text-align: center;
-  font-size: 25px;
-  color: #2b259f;
 
-}
 
 salesAI .form-control {
   display: block;
