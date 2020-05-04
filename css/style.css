@@ -187,9 +187,8 @@ salesAI .background-for-send-button {
   height: 50px;
   width: 60px;
   cursor: pointer;
-  z-index: 99999999;
+  z-index: 99999;
   right: 0px;
-  z-index: -1;
   color: #210CC1;
   text-align: center;
   background-color: rgb(236, 233, 252);
@@ -209,6 +208,7 @@ salesAI .form-control {
   border-top: 1px solid #dcdcdc;
   border-left: 1px solid #dcdcdc;
   border-right: 0px;
+  z-index: -1;
   width: 90%;
   height: 10px;
   padding: 2px 5px 0px 20px;
