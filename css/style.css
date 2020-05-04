@@ -14,6 +14,7 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   font-family: "Quicksand", sans-serif;
+  font-display: swap;
   font-size: 18px;
   color: rgb(255, 255, 255);
   overflow: hidden;
