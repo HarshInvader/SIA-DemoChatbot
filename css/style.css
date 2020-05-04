@@ -7,7 +7,6 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 
@@ -544,6 +543,7 @@ salesAI .suggestion .sugg-title {
     right: 0;
     left: 0;
     margin-top: -45px;
+    text-align: center;
     border-radius: 0px 0px 0px 0px;
     display: none;
     z-index: 1000;
@@ -562,7 +562,7 @@ salesAI .suggestion .sugg-title {
 @media screen and (max-width: 375px) {
   SalesAI .bot_profile {
     align-self: center;
-    width: 102%;
+
     margin-left: 0;
     margin-right: 0;
     top: 0px;
@@ -572,12 +572,14 @@ salesAI .suggestion .sugg-title {
     text-align: center;
     border-radius: 0px 0px 0px 0px;
     display: none;
-    z-index: 1000;
+
+
 
   }
 
   salesAI .chatCont {
     width: 100%;
+    border: 0px;
     height: 70vh;
     right: 0;
   }
