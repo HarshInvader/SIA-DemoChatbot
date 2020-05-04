@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand";
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  background: #43C6AC;
+  background: -webkit-linear-gradient(to right, #352eb1, #43C6AC);
+  background: linear-gradient(to right, #352eb1, #43C6AC);
+  min-width: 100vw;
+  min-height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+
+.fa-times-circle {
+  color: #fff !important;
+  font-size: 30px;
+  position: absolute;
+  right: 20px;
+  margin-top: 25px;
+  color: #868686;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+
+
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+
+
+.page-content {
+  margin-top: 30vh;
+  font-size: 50px;
+  font-weight: 100;
+  text-align: center;
+}
+
+
+.welcomeText {
+  font-size: 20px;
+  padding: 10px;
+}
+
+salesAI {
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+  z-index: 9999;
+  border-radius: 5px;
+}
+
+/* salesAI */
+salesAI.center .chatCont,
+salesAI.center .profile_div {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+salesAI.left .chatCont,
+salesAI.left .profile_div {
+  left: 0;
+}
+
+salesAI .chatCont {
+  position: fixed;
+  width: 560px;
+  height: 500px !important;
+  border: 1px solid #dcdcdc;
+  bottom: 50px;
+  right: 0;
+  background: #E4E6EC repeat;
+  border-top-left-radius: 3px;
+  z-index: 10000;
+  display: none;
+}
+
+
+
+salesAI .options {
+  font-size: 15px;
+  display: flex;
+  font-weight: 500;
+  flex-direction: row-reverse;
+  padding: 0 10px 0 0;
+  opacity: 0.8;
+}
+
+salesAI .optionButton {
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+  padding: 4px 10px;
+  margin: 0px 4px 6px 4px;
+  border: #000;
+  color: #E4E6EC;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #6b64f0;
+}
+
+salesAI .optionButton:hover {
+  background-color: #3a32d1;
+}
+
+
+salesAI .close {
+  position: absolute;
+  right: 10px;
+  margin-top: -50px;
+  color: #868686;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+salesAI .bot_profile {
+  position: absolute;
+  background: linear-gradient(180deg, #3A2BAB 0%, #4C2BAB 100%);
+  background-color: #392FA6;
+  right: -1px;
+  margin-top: -45px;
+  text-align: center;
+  border-radius: 7px 0px 0px 0px;
+  width: 560px;
+  display: none;
+  z-index: 1000;
+
+
+}
+
+salesAI .bot_profile:hover {
+  background: linear-gradient(180deg, rgb(71, 57, 173) 0%, rgb(81, 66, 194) 60%);
+
+}
+
+salesAI .bot_profile_img {
+  height: 70px;
+  padding: 10px;
+  left: 0px;
+  background: transparent;
+  text-align: left;
+  /* box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.16), 0 0px 10px 0 rgba(0, 0, 0, 0.12); */
+}
+
+salesAI .chatForm {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  margin-bottom: 0;
+  width: 560px;
+  display: none;
+}
+
+
+.background-for-send-button {
+  position: absolute;
+  border-top: 1px solid #dcdcdc;
+  padding: 12px 5px 0px 5px;
+  height: 50px;
+  width: 60px;
+  right: 0px;
+  z-index: 99999;
+  text-align: center;
+  background-color: rgb(236, 233, 252);
+  bottom: 0px;
+  font-size: 100px;
+}
+
+.background-for-send-button:hover {
+  background-color: #cecdfc;
+  cursor: pointer;
+}
+
+.fa-paper-plane {
+  text-align: center;
+  font-size: 25px;
+  color: #2b259f;
+
+}
+
+salesAI .form-control {
+  display: block;
+  border-top: 1px solid #dcdcdc;
+  border-left: 1px solid #dcdcdc;
+  border-right: 0px;
+  width: 90%;
+  height: 10px;
+  padding: 2px 5px 0px 20px;
+  font-size: 18px;
+  outline: none;
+  font-family: 'Quicksand', sans-serif;
+}
+
+salesAI .form-control,
+salesAI .form-control:focus {
+  box-shadow: none;
+  border-radius: 0;
+  height: 50px;
+
+
+}
+
+salesAI .resultDiv .botResult {
+
+  background: #fff;
+  background: linear-gradient(180deg, #fff 0%, rgb(250, 249, 255) 100%);
+  color: #000;
+  text-align: left;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 400;
+  width: 560px;
+  float: left;
+  margin-left: 20px;
+  box-shadow: 0 8px 24px rgba(57, 57, 57, 0.1);
+  border-top-left-radius: 0;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  width: 70%;
+  position: relative;
+}
+
+salesAI .resultDiv .botResult::before {
+
+  content: url('../icons/smallBot.svg');
+  position: absolute;
+  width: 2px;
+  height: 0;
+  left: -40px;
+  margin-top: -18px;
+}
+
+
+salesAI .resultDiv .userEnteredText {
+  background: rgb(60, 39, 176);
+  background: linear-gradient(180deg, #3A2BAB 0%, #210CC1 100%);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  float: right;
+  color: #ffffff;
+  text-align: left;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 400;
+  width: 100px;
+  border-top-right-radius: 0;
+  position: relative;
+  left: -6px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  width: 50%;
+  transition: width 2s;
+  word-wrap: break-word;
+
+}
+
+
+
+salesAI .resultDiv .userEnteredText::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 0px solid rgba(0, 0, 0, 0);
+  border-bottom: 15px solid rgba(0, 0, 0, 0);
+  border-left: 15px solid rgb(60, 39, 176);
+  position: absolute;
+  right: -8px;
+  margin-top: -12px;
+}
+
+salesAI .profile_div {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+salesAI .img-profile {
+  width: 90px;
+  background: transparent;
+  border: 0px;
+  outline: 0px;
+  -webkit-filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.25));
+  transition: 0.2s all;
+}
+
+salesAI .img-profile:hover {
+  transform: translate(-0px, -20px);
+  transition: 0.2s all;
+}
+
+salesAI .col-hgt {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  float: left;
+  margin-right: 10px;
+}
+
+salesAI .chat-txt {
+  box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.16), 0 0px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 15px 15px;
+  border-radius: 50px;
+}
+
+
+/* Spinner start */
+salesAI .spinner {
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 400;
+  width: 560px;
+  float: left;
+  box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.16), 0 0px 10px 0 rgba(0, 0, 0, 0.12);
+  margin-bottom: 70px;
+  margin-top: 5px;
+  background: rgb(255, 255, 255);
+  width: 30%;
+  text-align: center;
+  display: none;
+  border-radius: 10px;
+  position: absolute;
+  box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.16), 0 0px 10px 0 rgba(0, 0, 0, 0.12);
+  bottom: 10px;
+  left: 19px;
+  padding: 5px;
+  border-top-left-radius: 0;
+}
+
+salesAI .spinner::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 0px solid rgba(255, 255, 255, 0);
+  border-bottom: 15px solid rgba(255, 255, 255, 0);
+  border-right: 15px solid rgb(255, 255, 255);
+  left: -15px;
+  margin-top: -5px;
+}
+
+salesAI .spinner>div {
+  width: 10px;
+  height: 10px;
+  background-color: #3A2BAB;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: loadingEffect 1.4s infinite ease-in-out both;
+  animation: loadingEffect 1.4s infinite ease-in-out both;
+  margin-right: 5px;
+}
+
+salesAI .spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+salesAI .spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+
+/*Animations*/
+.animation {
+  -webkit-animation: fadein 0.25s;
+  animation: fadein 0.25s;
+  -webkit-animation-timing-function: all 200ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  animation-timing-function: all 200ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+
+@-webkit-keyframes loadingEffect {
+
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0)
+  }
+
+  40% {
+    -webkit-transform: scale(1.0)
+  }
+}
+
+@keyframes loadingEffect {
+
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  40% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+/* Spinner End */
+
+
+/* Suggestions */
+
+
+salesAI .suggestion {
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 400;
+  width: 560px;
+  float: left;
+  box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.16), 0 0px 10px 0 rgba(0, 0, 0, 0.12);
+  margin-left: 20px;
+  border-top-left-radius: 0;
+  margin-bottom: 20px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+
+
+salesAI .suggestion::before {
+  content: url('../icons/smallBot.svg');
+  position: absolute;
+  width: 2px;
+  height: 0;
+  left: -40px;
+  margin-top: -12px;
+}
+
+
+salesAI .suggestion .sugg-options {
+  display: block;
+  border: 2px solid rgb(52, 30, 174);
+  color: rgb(52, 30, 174);
+  text-align: center;
+  padding: 5px 8px 5px 8px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 20px;
+  opacity: 0.9;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.2s all;
+}
+
+salesAI .suggestion .sugg-options:hover {
+  background: rgb(52, 30, 174);
+  color: white;
+  transition: 0.2s all;
+}
+
+salesAI .suggestion .sugg-title {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 6px;
+
+}
+
+
+
+/* Suggestions end */
+
+.resultDiv {
+  padding: 40px 20px 40px 30px;
+  overflow-y: scroll;
+  height: 100%;
+  /* transform: scaleX(1);
+  transition: all 1s; */
+}
+
+.resultDiv::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #f7f3ef;
+  border-radius: 10px;
+}
+
+.resultDiv::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f7f3ef;
+}
+
+.resultDiv::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #332adba8;
+
+}
+
+@media screen and (max-width: 500px) {
+
+  salesAI .resultDiv .userEnteredText,
+  salesAI .resultDiv .botResult,
+  salesAI .suggestion {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  salesAI .chatCont {
+    width: 100%;
+    height: 100vh;
+    right: 0;
+  }
+
+  salesAI .chatForm {
+    width: 100%;
+    right: 0;
+  }
+
+  SalesAI .bot_profile {
+    align-self: center;
+    width: 101%;
+    top: 0px;
+    margin-bottom: 0px;
+    right: 0;
+    left: 0;
+
+    margin-top: -50px;
+    text-align: center;
+    border-radius: 0px 0px 0px 0px;
+
+    display: none;
+    z-index: 1000;
+
+  }
+
+  salesAI .chatCont {
+    height: 80vh !important;
+  }
+
+  .page-content {
+    font-size: 30px;
+  }
+}
+
+/* salesAI end */

@@ -1,0 +1,95 @@
+<html>
+
+<head>
+  <title>Chat Bot</title>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href=".icons/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href=".icons/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href=".icons/favicon/favicon-16x16.png">
+  <link rel="manifest" href=".icons/favicon/site.webmanifest">
+</head>
+
+<body>
+
+
+  <div class="container">
+
+    <!-- Page Content -->
+    <div class="page-content">
+      <img src="icons/bot.svg" alt="bot logo">
+      <br>
+      A Simple Chat-Bot by Harsha.
+      <br>
+
+      <!-- Chatbot Stuff -->
+      <salesAI>
+        <div class="chatCont" id="chatCont">
+
+          <!-- Bot Top -->
+          <div class="bot_profile close">
+            <img src="icons/bot2.svg" class="bot_profile_img" alt="chat box logo">
+
+            <i class="fas fa-times-circle white" aria-hidden="true"></i>
+
+
+          </div>
+
+          <!-- Intro Text -->
+          <div id="result_div" class="resultDiv">
+            <p class="botResult">Hi there! 👋 I am SIA. How can I help you today?</p>
+
+            <div class="clearfix"></div>
+            <div class="suggestion">
+              <div class="sugg-title">Suggestions: </div>
+              <span class="sugg-options">Who are you?</span>
+              <span class="sugg-options">How old are you?</span>
+              <span class="sugg-options">When were you made?</span>
+              <span class="sugg-options">You are beautiful.</span>
+            </div>
+          </div>
+
+          <!-- Chat Area -->
+
+          <div class="chatForm" id="chat-div">
+            <!-- Loading Spinner -->
+            <div class="spinner">
+              <div class="bounce1"></div>
+              <div class="bounce2"></div>
+              <div class="bounce3"></div>
+            </div>
+            <div class="empty"></div>
+
+            <!-- Input Field -->
+            <div class="options">
+              <div id="optionButton1" class="optionButton">Stop</div>
+              <div id="optionButton2" class="optionButton">Hello</div>
+            </div>
+            <input type="text" id="chat-input" autocomplete="off" placeholder="Type your question here"
+              class="form-control">
+            <div id="sendButton" class="background-for-send-button">
+              <i class="fas fa-paper-plane"></i>
+            </div>
+
+          </div>
+        </div>
+
+        <!--Chat Icon-->
+        <div class="profile_div">
+          <div class="row">
+            <div class="col-hgt">
+              <img src="icons/bot3.svg" class="img-profile" alt="SIA welcome message">
+            </div>
+          </div>
+        </div>
+      </salesAI>
+
+      <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+      <script src="./app.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+</body>
+
+</html>
