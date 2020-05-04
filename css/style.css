@@ -9,8 +9,8 @@
 
 body {
   background: #43c6ac;
-  background: -webkit-linear-gradient(to right, #352eb1, #43c6ac);
-  background: linear-gradient(to right, #352eb1, #43c6ac);
+  background: -webkit-linear-gradient(to right, #0498a8, #43c6ac);
+  background: linear-gradient(to right, #0498a8, #43c6ac);
   min-width: 100vw;
   min-height: 100vh;
   font-family: "Quicksand", sans-serif;
@@ -43,7 +43,7 @@ a:focus {
 }
 
 h6 a {
-  color: rgba(213, 213, 213, 0.653);
+  color: rgba(244, 244, 244, 0.653);
   font-weight: 300;
 }
 
