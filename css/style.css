@@ -9,20 +9,17 @@
   -moz-box-sizing: border-box;
 }
 
-
-
 body {
-  background: #43C6AC;
-  background: -webkit-linear-gradient(to right, #352eb1, #43C6AC);
-  background: linear-gradient(to right, #352eb1, #43C6AC);
+  background: #43c6ac;
+  background: -webkit-linear-gradient(to right, #352eb1, #43c6ac);
+  background: linear-gradient(to right, #352eb1, #43c6ac);
   min-width: 100vw;
   min-height: 100vh;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 18px;
   color: rgb(255, 255, 255);
   overflow: hidden;
 }
-
 
 .fa-times-circle {
   color: #fff !important;
@@ -33,10 +30,11 @@ body {
   color: #868686;
   font-size: 20px;
   cursor: pointer;
-
 }
-
-
+input {
+  outline: 0;
+  border: 0;
+}
 
 a,
 a:hover,
@@ -50,15 +48,12 @@ h6 a {
   font-weight: 300;
 }
 
-
-
 .page-content {
   margin-top: 30vh;
   font-size: 50px;
   font-weight: 500;
   text-align: center;
 }
-
 
 .welcomeText {
   font-size: 20px;
@@ -91,13 +86,11 @@ salesAI .chatCont {
   border: 1px solid #dcdcdc;
   bottom: 50px;
   right: 0;
-  background: #E4E6EC repeat;
+  background: #e4e6ec repeat;
   border-top-left-radius: 3px;
   z-index: 10000;
   display: none;
 }
-
-
 
 salesAI .options {
   font-size: 15px;
@@ -109,11 +102,11 @@ salesAI .options {
 }
 
 salesAI .optionButton {
-  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
   padding: 4px 10px;
   margin: 0px 4px 6px 4px;
   border: #000;
-  color: #E4E6EC;
+  color: #e4e6ec;
   border-radius: 10px;
   cursor: pointer;
   background-color: #6b64f0;
@@ -122,7 +115,6 @@ salesAI .optionButton {
 salesAI .optionButton:hover {
   background-color: #3a32d1;
 }
-
 
 salesAI .close {
   position: absolute;
@@ -135,8 +127,8 @@ salesAI .close {
 
 salesAI .bot_profile {
   position: absolute;
-  background: linear-gradient(180deg, #3A2BAB 0%, #4C2BAB 100%);
-  background-color: #392FA6;
+  background: linear-gradient(180deg, #3a2bab 0%, #4c2bab 100%);
+  background-color: #392fa6;
   right: -1px;
   margin-top: -45px;
   text-align: center;
@@ -144,13 +136,14 @@ salesAI .bot_profile {
   width: 560px;
   display: none;
   z-index: 1000;
-
-
 }
 
 salesAI .bot_profile:hover {
-  background: linear-gradient(180deg, rgb(71, 57, 173) 0%, rgb(81, 66, 194) 60%);
-
+  background: linear-gradient(
+    180deg,
+    rgb(71, 57, 173) 0%,
+    rgb(81, 66, 194) 60%
+  );
 }
 
 salesAI .bot_profile_img {
@@ -177,7 +170,6 @@ salesAI .fa-paper-plane {
   font-size: 25px;
   color: #2b259f !important;
   color: pointer;
-
 }
 
 salesAI .background-for-send-button {
@@ -189,7 +181,7 @@ salesAI .background-for-send-button {
   cursor: pointer;
   z-index: 99999;
   right: 0px;
-  color: #210CC1;
+  color: #210cc1;
   text-align: center;
   background-color: rgb(236, 233, 252);
   bottom: 0px;
@@ -200,8 +192,6 @@ salesAI .background-for-send-button:hover {
   background-color: #cecdfc;
   cursor: pointer;
 }
-
-
 
 salesAI .form-control {
   display: block;
@@ -214,7 +204,7 @@ salesAI .form-control {
   padding: 2px 5px 0px 20px;
   font-size: 18px;
   outline: none;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 salesAI .form-control,
@@ -222,12 +212,9 @@ salesAI .form-control:focus {
   box-shadow: none;
   border-radius: 0;
   height: 50px;
-
-
 }
 
 salesAI .resultDiv .botResult {
-
   background: #fff;
   background: linear-gradient(180deg, #fff 0%, rgb(250, 249, 255) 100%);
   color: #000;
@@ -248,8 +235,7 @@ salesAI .resultDiv .botResult {
 }
 
 salesAI .resultDiv .botResult::before {
-
-  content: url('../icons/smallBot.svg');
+  content: url("../icons/smallBot.svg");
   position: absolute;
   width: 2px;
   height: 0;
@@ -257,10 +243,9 @@ salesAI .resultDiv .botResult::before {
   margin-top: -18px;
 }
 
-
 salesAI .resultDiv .userEnteredText {
   background: rgb(60, 39, 176);
-  background: linear-gradient(180deg, #3A2BAB 0%, #210CC1 100%);
+  background: linear-gradient(180deg, #3a2bab 0%, #210cc1 100%);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   float: right;
   color: #ffffff;
@@ -278,10 +263,7 @@ salesAI .resultDiv .userEnteredText {
   width: 50%;
   transition: width 2s;
   word-wrap: break-word;
-
 }
-
-
 
 salesAI .resultDiv .userEnteredText::before {
   content: "";
@@ -331,7 +313,6 @@ salesAI .chat-txt {
   border-radius: 50px;
 }
 
-
 /* Spinner start */
 salesAI .spinner {
   padding: 12px;
@@ -367,10 +348,10 @@ salesAI .spinner::before {
   margin-top: -5px;
 }
 
-salesAI .spinner>div {
+salesAI .spinner > div {
   width: 10px;
   height: 10px;
-  background-color: #3A2BAB;
+  background-color: #3a2bab;
   border-radius: 100%;
   display: inline-block;
   -webkit-animation: loadingEffect 1.4s infinite ease-in-out both;
@@ -388,31 +369,28 @@ salesAI .spinner .bounce2 {
   animation-delay: -0.16s;
 }
 
-
 /*Animations*/
 .animation {
   -webkit-animation: fadein 0.25s;
   animation: fadein 0.25s;
-  -webkit-animation-timing-function: all 200ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  -webkit-animation-timing-function: all 200ms
+    cubic-bezier(0.55, 0.055, 0.675, 0.19);
   animation-timing-function: all 200ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-
 @-webkit-keyframes loadingEffect {
-
   0%,
   80%,
   100% {
-    -webkit-transform: scale(0)
+    -webkit-transform: scale(0);
   }
 
   40% {
-    -webkit-transform: scale(1.0)
+    -webkit-transform: scale(1);
   }
 }
 
 @keyframes loadingEffect {
-
   0%,
   80%,
   100% {
@@ -421,16 +399,14 @@ salesAI .spinner .bounce2 {
   }
 
   40% {
-    -webkit-transform: scale(1.0);
-    transform: scale(1.0);
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
 
 /* Spinner End */
 
-
 /* Suggestions */
-
 
 salesAI .suggestion {
   background: #fff;
@@ -451,17 +427,14 @@ salesAI .suggestion {
   position: relative;
 }
 
-
-
 salesAI .suggestion::before {
-  content: url('../icons/smallBot.svg');
+  content: url("../icons/smallBot.svg");
   position: absolute;
   width: 2px;
   height: 0;
   left: -40px;
   margin-top: -12px;
 }
-
 
 salesAI .suggestion .sugg-options {
   display: block;
@@ -489,10 +462,7 @@ salesAI .suggestion .sugg-title {
   font-size: 15px;
   font-weight: 500;
   margin-bottom: 6px;
-
 }
-
-
 
 /* Suggestions end */
 
@@ -518,11 +488,9 @@ salesAI .suggestion .sugg-title {
 .resultDiv::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #332adba8;
-
 }
 
 @media screen and (max-width: 500px) {
-
   salesAI .resultDiv .userEnteredText,
   salesAI .resultDiv .botResult,
   salesAI .suggestion {
@@ -553,7 +521,6 @@ salesAI .suggestion .sugg-title {
     border-radius: 0px 0px 0px 0px;
     display: none;
     z-index: 1000;
-
   }
 
   salesAI .chatCont {
@@ -578,9 +545,6 @@ salesAI .suggestion .sugg-title {
     text-align: center;
     border-radius: 0px 0px 0px 0px;
     display: none;
-
-
-
   }
 
   salesAI .chatCont {
@@ -590,13 +554,9 @@ salesAI .suggestion .sugg-title {
     right: 0;
   }
 
-
-
   salesAI .resultDiv .botResult {
     margin-top: 40px;
   }
-
-
 }
 
 /* salesAI end */
