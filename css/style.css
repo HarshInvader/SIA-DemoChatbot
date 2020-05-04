@@ -8,15 +8,16 @@
 }
 
 body {
-  background: #43c6ac;
   background: -webkit-linear-gradient(to right, #0498a8, #43c6ac);
-  background: linear-gradient(to right, #0498a8, #43c6ac);
+  background: linear-gradient(180deg, #9ff7d3 0%, #50d2a3 100%);
+  background: linear-gradient(90deg, #aabfff 0%, #d3deff 100%);
   min-width: 100vw;
   min-height: 100vh;
   font-family: "Quicksand", sans-serif;
   font-display: swap;
   font-size: 18px;
-  color: rgb(255, 255, 255);
+  font-weight: 500;
+  color: #4938ca;
   overflow: hidden;
 }
 
@@ -43,7 +44,7 @@ a:focus {
 }
 
 h6 a {
-  color: rgba(217, 255, 215, 0.653);
+  color: #2511be62;
   font-weight: 300;
 }
 
@@ -57,12 +58,6 @@ h6 a {
 .welcomeText {
   font-size: 20px;
   padding: 10px;
-}
-
-salesAI {
-  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
-  z-index: 9999;
-  border-radius: 5px;
 }
 
 /* salesAI */
@@ -85,7 +80,8 @@ salesAI .chatCont {
   border: 1px solid #dcdcdc;
   bottom: 50px;
   right: 0;
-  background: #e4e6ec repeat;
+  box-shadow: 0 8px 24px rgba(57, 57, 57, 0.25);
+  background: linear-gradient(180deg, #dde4fa 0%, #eae4f5 100%);
   border-top-left-radius: 3px;
   z-index: 10000;
   display: none;
@@ -126,8 +122,9 @@ salesAI .close {
 
 salesAI .bot_profile {
   position: absolute;
-  background: linear-gradient(180deg, #3a2bab 0%, #4c2bab 100%);
   background-color: #392fa6;
+  background: linear-gradient(180deg, #3a2bab 0%, #210cc1 100%);
+  box-shadow: 0px -20px 50px rgba(0, 0, 0, 0.25);
   right: -1px;
   margin-top: -45px;
   text-align: center;
@@ -138,11 +135,7 @@ salesAI .bot_profile {
 }
 
 salesAI .bot_profile:hover {
-  background: linear-gradient(
-    180deg,
-    rgb(71, 57, 173) 0%,
-    rgb(81, 66, 194) 60%
-  );
+  background: linear-gradient(180deg, rgb(71, 57, 173) 0%, #3a27c7 60%);
 }
 
 salesAI .bot_profile_img {
@@ -198,6 +191,7 @@ salesAI .form-control {
   border-left: 1px solid #dcdcdc;
   border-right: 0px;
   z-index: -1;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
   width: 90%;
   height: 10px;
   padding: 2px 5px 0px 20px;
@@ -284,7 +278,7 @@ salesAI .profile_div {
 }
 
 salesAI .img-profile {
-  width: 90px;
+  width: 100px;
   background: transparent;
   border: 0px;
   outline: 0px;
@@ -474,14 +468,14 @@ salesAI .suggestion .sugg-title {
 }
 
 .resultDiv::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-  background-color: #f7f3ef;
+  -webkit-box-shadow: inset 0 0 6px rgba(178, 188, 254, 0.1);
+  background-color: #d3deff;
   border-radius: 10px;
 }
 
 .resultDiv::-webkit-scrollbar {
   width: 10px;
-  background-color: #f7f3ef;
+  background-color: #d3deff;
 }
 
 .resultDiv::-webkit-scrollbar-thumb {

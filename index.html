@@ -34,64 +34,78 @@
 
         <!-- Chatbot Stuff -->
         <salesAI>
-          <div class="chatCont" id="chatCont">
+          <div class="ChatbotClass">
+            <div class="chatCont" id="chatCont">
 
-            <!-- Bot Top -->
-            <div class="bot_profile close">
-              <img src="icons/bot2.svg" class="bot_profile_img" alt="chat box logo">
-              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times-circle" class="svg-inline--fa fa-times-circle fa-w-16 white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z"></path></svg>
-              <!-- <i class="fas fa-times-circle white" aria-hidden="true"></i> -->
+              <!-- Bot Top -->
+              <div class="bot_profile close">
+                <img src="icons/bot2.svg" class="bot_profile_img" alt="chat box logo">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times-circle"
+                  class="svg-inline--fa fa-times-circle fa-w-16 white" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512" data-fa-i2svg="">
+                  <path fill="currentColor"
+                    d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z">
+                  </path>
+                </svg>
+                <!-- <i class="fas fa-times-circle white" aria-hidden="true"></i> -->
 
 
-            </div>
-
-            <!-- Intro Text -->
-            <div id="result_div" class="resultDiv">
-              <p class="botResult">Hi there! 👋 I am SIA. How can I help you today?</p>
-
-              <div class="clearfix"></div>
-              <div class="suggestion">
-                <div class="sugg-title">Suggestions: </div>
-                <span class="sugg-options">Who are you?</span>
-                <span class="sugg-options">How old are you?</span>
-                <span class="sugg-options">When were you made?</span>
-                <span class="sugg-options">You are beautiful.</span>
               </div>
-            </div>
 
-            <!-- Chat Area -->
+              <!-- Intro Text -->
+              <div id="result_div" class="resultDiv">
+                <p class="botResult">Hi there! 👋 I am SIA. How can I help you today?</p>
 
-            <div class="chatForm" id="chat-div">
-              <!-- Loading Spinner -->
-              <div class="spinner">
-                <div class="bounce1"></div>
-                <div class="bounce2"></div>
-                <div class="bounce3"></div>
-              </div>
-              <div class="empty"></div>
-
-              <!-- Input Field -->
-              <div class="options">
-                <div id="optionButton1" class="optionButton">Stop</div>
-                <div id="optionButton2" class="optionButton">Hello</div>
-              </div>
-              <input type="text" id="chat-input" autocomplete="off" placeholder="Type your question here"
-                class="form-control">
-              <div id="sendButton" class="background-for-send-button">
-                <div class="fa-paper-plane">
-                  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="paper-plane" class="svg-inline--fa fa-paper-plane fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"></path></svg>
+                <div class="clearfix"></div>
+                <div class="suggestion">
+                  <div class="sugg-title">Suggestions: </div>
+                  <span class="sugg-options">Who are you?</span>
+                  <span class="sugg-options">How old are you?</span>
+                  <span class="sugg-options">When were you made?</span>
+                  <span class="sugg-options">You are beautiful.</span>
                 </div>
-                  
               </div>
 
-            </div>
-          </div>
+              <!-- Chat Area -->
 
-          <!--Chat Icon-->
-          <div class="profile_div">
-            <div class="row">
-              <div class="col-hgt">
-                <img src="icons/bot3.svg" class="img-profile" alt="SIA welcome message">
+              <div class="chatForm" id="chat-div">
+                <!-- Loading Spinner -->
+                <div class="spinner">
+                  <div class="bounce1"></div>
+                  <div class="bounce2"></div>
+                  <div class="bounce3"></div>
+                </div>
+                <div class="empty"></div>
+
+                <!-- Input Field -->
+                <div class="options">
+                  <div id="optionButton1" class="optionButton">Stop</div>
+                  <div id="optionButton2" class="optionButton">Hello</div>
+                </div>
+                <input type="text" id="chat-input" autocomplete="off" placeholder="Type your question here"
+                  class="form-control">
+                <div id="sendButton" class="background-for-send-button">
+                  <div class="fa-paper-plane">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="paper-plane"
+                      class="svg-inline--fa fa-paper-plane fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512" data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z">
+                      </path>
+                    </svg>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            <!--Chat Icon-->
+            <div class="profile_div">
+              <div class="row">
+                <div class="col-hgt">
+                  <img src="icons/bot3.svg" class="img-profile" alt="SIA welcome message">
+                </div>
               </div>
             </div>
           </div>
